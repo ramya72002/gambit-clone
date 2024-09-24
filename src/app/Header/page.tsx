@@ -1,0 +1,36 @@
+import React from 'react';
+import './header.scss'; // Direct import of SCSS
+
+const Header = () => {
+  return (
+    <header className="header">
+      <div className="header__container">
+        {/* Left section: Logo */}
+        <div className="header__logo">
+          <a href="/">
+            <img
+              src="http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/Gambit-Logo.png"
+              alt="Gambit Logo"
+              className="header__logo-image"
+            />
+          </a>
+        </div>
+
+        {/* Right section: Navigation Menu & Button */}
+        <nav className="header__nav">
+          <ul className="header__menu">
+            <li className="header__menu-item"><a href="/path1">Link 1</a></li>
+            <li className="header__menu-item"><a href="/path2">Link 2</a></li>
+            <li className="header__menu-item"><a href="/path3">Link 3</a></li>
+          </ul>
+
+          <a href="/membership" className="header__join-btn">
+            Join Membership
+          </a>
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

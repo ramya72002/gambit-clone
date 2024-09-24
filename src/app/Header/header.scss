@@ -1,0 +1,93 @@
+.header {
+    position: relative;
+    z-index: 99;
+    background-color: #1B1B1B;
+    border-bottom: 1px solid #1B1B1B;
+    padding: 0;
+  
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+  
+    &__logo {
+      width: 15%;
+  
+      img {
+        height: 42px;
+      }
+  
+      @media (max-width: 768px) {
+        width: 25%;
+        img {
+          height: 35px;
+        }
+      }
+  
+      @media (max-width: 480px) {
+        width: 80%;
+        img {
+          height: 28px;
+        }
+      }
+    }
+  
+    &__nav {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 85%;
+  
+      @media (max-width: 768px) {
+        width: 75%;
+      }
+  
+      @media (max-width: 480px) {
+        width: 20%;
+        flex-direction: column;
+      }
+    }
+  
+    &__menu {
+      display: flex;
+      gap: 35px;
+  
+      &-item {
+        list-style: none;
+  
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          &:hover {
+            color: #6D6D6D;
+          }
+        }
+      }
+  
+      @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  
+    &__join-btn {
+      padding: 10px 20px;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      background-color: transparent;
+      text-decoration: none;
+  
+      &:hover {
+        color: #1B1B1B;
+        background-color: #ffffff;
+      }
+  
+      @media (max-width: 480px) {
+        display: none;
+      }
+    }
+  }
+  
