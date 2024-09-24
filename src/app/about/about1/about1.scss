@@ -1,0 +1,30 @@
+// components/About1.scss
+.about1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); // Optional overlay for readability
+    padding: 20px;
+  
+    &__content {
+      max-width: 720px; // Match the boxed width from JSON
+      padding: 2em; // Padding from JSON
+      color: #fff; // Text color
+    }
+  
+    &__heading {
+      margin: 0; // Reset margins
+      font-size: 2em; // Default heading size
+    }
+  
+    &__heading--h1 {
+      font-size: 2.5em; // Specific style for h1
+    }
+  
+    &__heading--h4 {
+      font-size: 1.5em; // Specific style for h4
+      margin-top: 1em; // Margin for spacing
+    }
+  }
+  

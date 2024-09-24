@@ -89,5 +89,33 @@
         display: none;
       }
     }
+  
+    &__dropdown {
+      position: relative;
+  
+      &:hover .header__dropdown-content {
+        display: block; // Show dropdown on hover
+      }
+  
+      &-content {
+        display: none; // initially hidden
+        position: absolute;
+        background-color: #1B1B1B;
+        min-width: 160px; // adjust as needed
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+  
+        a {
+          color: #ffffff;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          &:hover {
+            background-color: #ffffff;
+            color: #1B1B1B;
+          }
+        }
+      }
+    }
   }
   
