@@ -1,0 +1,93 @@
+// styles/hero5.scss
+
+.hero5 {
+    display: flex;
+    flex-direction: column;
+    padding: 5em 0 7em 0;
+    justify-content: space-between;
+    background-color: var(--background-color); // Assuming a global variable
+
+    &-container {
+        max-width: 600px;
+        padding: 2em;
+    }
+
+    &-heading {
+        text-align: center;
+        margin-bottom: 2em;
+        
+        .hero5-title {
+            font-size: 1.5em; // Adjust size as needed
+            margin-bottom: 0.5em;
+        }
+
+        .hero5-subtitle {
+            font-size: 1em; // Adjust size as needed
+        }
+    }
+
+    &-icon-boxes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+        .icon-box {
+            flex: 0 0 33%; // 33% width for three boxes
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2em;
+
+            .icon {
+                font-size: 2em; // Adjust size as needed
+                margin-bottom: 0.5em;
+            }
+
+            .title {
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    }
+
+    &-cards {
+        display: flex;
+        justify-content: space-between;
+
+        .hero5-card {
+            flex: 0 0 33%;
+            background-size: cover;
+            background-position: center;
+            height: 275px; // Minimum height
+            display: flex;
+            align-items: flex-end;
+            padding: 1em;
+            color: #1B1B1B;
+
+            .card-content {
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 1em;
+                border-radius: 8px;
+
+                .card-title {
+                    font-size: 1.5em;
+                    font-weight: bold;
+                }
+
+                .learn-more-button {
+                    background-color: #1B1B1B;
+                    color: #FFFFFF;
+                    border: none;
+                    padding: 0.5em 1em;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #6D6D6D;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+// components/hero4.scss
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    padding: 2em 0; // Adjust padding based on your design
+    flex-wrap: wrap;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 1em 0;
+    }
+  }
+  
+  .text-container {
+    width: 50%;
+    padding: 3em 5em 3em 1em; // Adjust padding based on your design
+  
+    @media (max-width: 768px) {
+      padding: 1em;
+      width: 100%;
+    }
+  
+    .heading {
+      text-align: left;
+    }
+  
+    .subheading {
+      text-align: left;
+      margin: 1em 0;
+    }
+  
+    .description {
+      text-align: left;
+      margin-bottom: 2em;
+    }
+  
+    .icon-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1em;
+  
+      .icon {
+        font-size: 35px; // Adjust size based on your design
+        margin-right: 10px;
+      }
+    }
+  }
+  
+  .image-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  
+    .hero-image {
+      width: 100%;
+      height: auto; // or fixed height based on your design
+      object-fit: cover; // Adjusts the image to cover the area
+    }
+  }
+  

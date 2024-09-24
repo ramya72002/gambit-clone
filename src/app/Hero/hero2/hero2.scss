@@ -1,0 +1,63 @@
+.heroContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-image: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/moving-chess-piece-e1697916134375.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 7em 0; // Adjust for your padding requirements
+    position: relative;
+    color: #ffffff; // Text color
+    overflow: hidden;
+  
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(27, 27, 27, 0.66) 0%, rgba(27, 27, 27, 1) 100%);
+      z-index: 1; // Overlay
+    }
+  
+    .contentWrapper {
+      position: relative; // Ensure text is above overlay
+      z-index: 2; // Bring content above the overlay
+      max-width: 720px;
+      padding: 2em;
+  
+      @media (max-width: 768px) {
+        max-width: 100%; // Full width on mobile
+        padding: 1em;
+      }
+  
+      .title {
+        font-size: 2.5em; // Adjust font size
+        margin-bottom: 1em;
+      }
+  
+      .description {
+        margin-bottom: 2em;
+        font-size: 1.2em; // Description font size
+      }
+  
+      .getStartedButton {
+        background-color: transparent; // Background transparent
+        border: 2px solid #ffffff; // Button border
+        color: #ffffff; // Button text color
+        padding: 0.5em 2em; // Button padding
+        font-size: 1em; // Button font size
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+  
+        &:hover {
+          background-color: #ffffff; // Button hover background
+          color: #1b1b1b; // Button hover text color
+        }
+      }
+    }
+  }
+  

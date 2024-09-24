@@ -1,0 +1,101 @@
+.footer {
+    background-color: #f8f9fa;
+    padding: 2em 0;
+
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .footer-logo {
+            img {
+                width: 100px; // Adjust the logo size as needed
+            }
+        }
+
+        .footer-description {
+            p {
+                margin: 0.5em 0;
+                color: #6c757d;
+            }
+        }
+
+        .footer-social {
+            a {
+                color: #6d6d6d;
+                margin-right: 10px;
+
+                &:hover {
+                    color: #dc69ef;
+                }
+            }
+        }
+
+        .footer-links {
+            h5 {
+                margin-bottom: 0.5em;
+                color: #343a40;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    margin: 0.5em 0;
+
+                    a {
+                        text-decoration: none;
+                        color: #6c757d;
+
+                        &:hover {
+                            color: #dc69ef;
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-newsletter {
+            h5 {
+                margin-bottom: 0.5em;
+                color: #343a40;
+            }
+
+            p {
+                color: #6c757d;
+                margin: 0.5em 0;
+            }
+
+            form {
+                display: flex;
+
+                input {
+                    padding: 0.5em;
+                    border: 1px solid #ced4da;
+                    border-radius: 0.25em;
+                    margin-right: 0.5em;
+                }
+
+                button {
+                    padding: 0.5em 1em;
+                    background-color: #dc69ef;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 0.25em;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #b354b5;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding-top: 1em;
+        color: #6c757d;
+    }
+}

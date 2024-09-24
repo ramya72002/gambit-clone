@@ -1,0 +1,92 @@
+.hero {
+    background-image: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-e1698215305281.jpg');
+    background-position: center center;
+    background-size: cover;
+    padding: 7% 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #fff;
+    flex-direction: column;
+    z-index: 3;
+  
+    &-content {
+      width: 100%; // Adjusted for full width in column layout
+      padding: 7em 1em 12em 1em;
+  
+      .hero-title {
+        margin: 0;
+        text-align: left;
+      }
+  
+      .hero-subtitle {
+        margin: 0;
+        text-align: left;
+      }
+  
+      .hero-discover {
+        margin: 0;
+        text-align: left;
+      }
+  
+      .hero-button {
+        border: 2px solid #ffffff;
+        background-color: transparent;
+        color: #ffffff;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+  
+        &:hover {
+          background-color: #ffffff;
+          color: #1B1B1B;
+        }
+      }
+    }
+  
+    &-socials {
+      width: 100%; // Adjusted for full width in column layout
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .social-icons {
+        display: flex;
+        gap: 21px;
+        font-size: 21px;
+  
+        a {
+          color: inherit;
+        }
+      }
+    }
+  
+    &-counters {
+      display: flex;
+      justify-content: space-around;
+      width: 100%; // Adjusted for full width in column layout
+      padding: 2em 0;
+  
+      .counter-item {
+        flex-basis: 25%; // Adjusted for responsive layout
+        text-align: center;
+        padding: 14px;
+  
+        .counter-number {
+          font-size: 2em;
+          color: #e20c0c; // Adjust to your desired color
+        }
+  
+        .counter-title {
+          font-size: 1em;
+          color: #eeeaea; // Adjust to your desired color
+        }
+  
+        // Add borders or shadows if needed
+        border: 2px solid #e20c0c; // Example border color
+        margin: 10px;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  
