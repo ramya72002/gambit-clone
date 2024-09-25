@@ -41,6 +41,8 @@ const Header = () => {
               <div className="header__dropdown-content">
                 <a href="/gallary/gallary1">Gallary</a>
                 <a href="/faq/faq1">FAQ</a>
+                <a href="/blog/blog1">Blog</a>
+                <a href="/faq/faq1">Single Post</a>
               </div>
             </li> 
           </ul>
