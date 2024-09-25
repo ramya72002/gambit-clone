@@ -3,8 +3,8 @@ import React from 'react';
 import './About1.scss'; // Import the SCSS file for styles
 import About2 from '../pricing2/page';
 import About3 from '../pricing3/page';
-import About4 from '../about4/page';
-import About5 from '../about5/page';
+import About4 from '../pricing4/page';
+import About5 from '../pricing5/page';
 import Header from '@/app/Header/page';
 
 // Define a union type for text alignment

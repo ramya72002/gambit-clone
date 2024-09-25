@@ -1,8 +1,9 @@
 import Pricing2 from '../pricing2/page';
 import Pricing3 from '../pricing3/page';
-// import Pricing4 from '../pricing4/page';
-// import Pricing5 from '../pricing5/page';
+import Pricing4 from '../pricing4/page';
+import Pricing5 from '../pricing5/page';
 import Header from '@/app/Header/page';
+import Footer from '@/app/Footer/page';
 import React from 'react';
 import './pricing1.scss'; // Import the SCSS file directly
 
@@ -25,6 +26,9 @@ const Pricing1 = () => {
     </div>
     <Pricing2 />
     <Pricing3 />
+    <Pricing4 />
+    <Pricing5 />
+    <Footer />
     </div>
   );
 };
