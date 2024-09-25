@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
-import './Hero8.scss';
+import './hero8.scss';
 
 interface TestimonialProps {
     name: string;

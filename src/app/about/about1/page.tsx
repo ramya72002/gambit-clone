@@ -1,6 +1,6 @@
 // components/About1.tsx
 import React from 'react';
-import './About1.scss'; // Import the SCSS file for styles
+import './about1.scss'; // Import the SCSS file for styles
 import About2 from '../about2/page';
 import About3 from '../about3/page';
 import About4 from '../about4/page';
