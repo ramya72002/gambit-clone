@@ -15,7 +15,7 @@ const Hero5 = () => {
                     <div className="icon-box">
                     <div className="icon-box-image">
                             {/* Add the image above Adult */}
-                            <img src="" alt="" />
+                            <img src="/images/adult.png" alt="" />
                         </div>
                         <div className="icon-box-content">
                             <div className="title">Adult</div>
@@ -25,6 +25,7 @@ const Hero5 = () => {
                     <div className="icon-box">
                     <div className="icon-box-image">
                             {/* Add the image above Private */}
+                            <img src="/images/private.png" alt="" />
                         </div>
                         <div className="icon-box-content">
                             <div className="title">Private</div>

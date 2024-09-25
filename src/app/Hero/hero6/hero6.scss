@@ -1,21 +1,23 @@
 .hero6-container {
+    height: 650px;
     display: flex;
     flex-direction: row;
-    background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-concept-for-competition-and-strategy-6-e1698108470123.jpg') center center / cover no-repeat;
+    background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-concept-for-competition-and-strategy-6-e1698108470123.jpg') 
+    center center / cover no-repeat;
     padding: 5em 0 0;
     margin: 0;
-    position: relative;
+    position: relative; // Keep this to make sure the ::after is positioned relative to the container
 
     &::after {
         content: '';
-        position: absolute;
+        position: absolute; // Changed to absolute to cover the container
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(27, 27, 27, 0.7);
+        background: rgba(104, 104, 104, 0); // Semi-transparent dark overlay
+        z-index: 1; // Ensures the overlay is above the background but below content
     }
-
     .hero6-content {
         z-index: 1;
         color: #fff;
@@ -67,7 +69,8 @@
 
     .hero6-image {
         z-index: 1;
-        margin-top: -16em;
+        transform: translateX(500px) translateY(-350px);
+        margin-top: -20em;
 
         img {
             width: 100%;

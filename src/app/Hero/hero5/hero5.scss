@@ -38,30 +38,31 @@
         flex-wrap: wrap;
         
         .icon-box {
+            gap: 20px;
+            border-radius: 5px;
             border: 1px solid rgb(53, 53, 53);
             flex: 0 0 33%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: column; // Align content in a row
+            align-items: flex-start; // Align content to the top
             padding: 2em;
-
+    
             .icon-box-image {
-                width: 100px; // Set width as needed
-                height: 100px; // Set height as needed
+                width: 70px; // Set width as needed
+                height: 60px; // Set height as needed
                 background-size: cover;
                 background-position: center;
-                margin-bottom: 1em;
+                margin-right: 1em; // Add margin to the right to separate the content
                 border-radius: 8px;
             }
-
-            .icon {
-                font-size: 2em;
-                margin-bottom: 0.5em;
-            }
-
-            .title {
-                font-weight: bold;
-                text-align: left;
+    
+            .icon-box-content {
+                flex: 1; // Take the remaining space
+                .title {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: bold;
+                    text-align: left;
+                }
             }
         }
     }
@@ -71,10 +72,11 @@
         justify-content: space-between;
 
         .hero5-card {
+            border-radius: 5px;
             flex: 0 0 33%;
             background-size: cover;
             background-position: center;
-            height: 275px; // Minimum height
+            height: 400px; // Minimum height
             display: flex;
             align-items: flex-end;
             padding: 1em;
