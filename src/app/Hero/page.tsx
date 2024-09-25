@@ -6,8 +6,9 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h6 className="hero-title">Welcome To Gambit</h6>
-        <h1 className="hero-subtitle">Welcome to a place where you can paint your own history.</h1>
-        <p className="hero-discover">Discover more</p>
+        <h1 className="hero-subtitle">Welcome to a place  </h1>
+        <h1 className="hero-subtitle">where you can paint</h1>
+        <h1 className="hero-subtitle">your own history.</h1>
         <button className="hero-button">Discover more</button>
       </div>
 

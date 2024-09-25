@@ -7,7 +7,7 @@ const Hero4 = () => {
     <div className="hero-container">
       <div className="text-container">
         <h6 className="heading">OUR Class</h6>
-        <h2 className="subheading">Creating a winning mentality, giving birth to a tough generation</h2>
+        <h2 className="subheading">Creating a winning mentality, giving birth to a tough generation.</h2>
         <p className="description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>

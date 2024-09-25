@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .hero {
     background-image: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-e1698215305281.jpg');
     background-position: center center;
@@ -15,14 +16,23 @@
       padding: 7em 1em 12em 1em;
   
       .hero-title {
-        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(145, 130, 46);
+        transform: translateX(80px);  /* Shift the text right */
         text-align: left;
-      }
-  
-      .hero-subtitle {
-        margin: 0;
+    }
+    
+    .hero-subtitle {
+        font-family: "Poppins", sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        transform: translateX(80px);  /* Shift the text right */
         text-align: left;
-      }
+    }
+    
+    
   
       .hero-discover {
         margin: 0;
@@ -30,11 +40,12 @@
       }
   
       .hero-button {
-        border: 2px solid #ffffff;
-        background-color: transparent;
+        background-color: rgb(145, 130, 46);;
         color: #ffffff;
-        padding: 10px 20px;
+        padding: 12px 22px;
         cursor: pointer;
+        margin-top: 20px;
+        transform: translateX(80px);  /* Shift the text right */
         transition: background-color 0.3s, color 0.3s;
   
         &:hover {
@@ -65,27 +76,30 @@
       display: flex;
       justify-content: space-around;
       width: 100%; // Adjusted for full width in column layout
-      padding: 2em 0;
   
       .counter-item {
         flex-basis: 25%; // Adjusted for responsive layout
         text-align: center;
-        padding: 14px;
+        padding: 30px;
   
         .counter-number {
-          font-size: 2em;
-          color: #e20c0c; // Adjust to your desired color
+          font-family: "Poppins", sans-serif;
+          font-weight: bold;
+          font-size: 2.8em;
+          color: #bd903d; // Adjust to your desired color
         }
   
         .counter-title {
+          font-family: "Poppins", sans-serif;
           font-size: 1em;
-          color: #eeeaea; // Adjust to your desired color
+          color: #000000; // Adjust to your desired color
         }
   
         // Add borders or shadows if needed
-        border: 2px solid #e20c0c; // Example border color
-        margin: 10px;
+        background-color: white;
+        margin: 5px;
         box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        border-bottom: 8px solid rgb(211, 185, 36);
       }
     }
   }
