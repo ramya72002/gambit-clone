@@ -5,6 +5,7 @@ import About2 from '../about2/page';
 import About3 from '../about3/page';
 import About4 from '../about4/page';
 import About5 from '../about5/page';
+import Header from '@/app/Header/page';
 
 // Define a union type for text alignment
 type TextAlign = 'left' | 'right' | 'center' | 'justify';
@@ -130,7 +131,9 @@ const About1: React.FC = () => {
 
   return (
     <div>
+      <Header />
     <div
+
       className="about1"
       style={{
         backgroundImage: `url(${data.content[0].settings.background_image.url})`,
