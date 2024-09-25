@@ -1,5 +1,6 @@
 import React from 'react';
-import './footer.scss'; // Make sure to create a corresponding SCSS file for styling
+import './footer.scss';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Footer = () => {
     return (
@@ -38,7 +39,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-newsletter">
                     <h5>Newsletter</h5>
-                    <p>Signup our newsletter to get update information, news, insight or promotions.</p>
+                    <p>Signup for our newsletter to get updates, news, insights, or promotions.</p>
                     <form>
                         <input type="email" placeholder="Email" required />
                         <button type="submit">Sign Up</button>

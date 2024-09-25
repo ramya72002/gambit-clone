@@ -8,9 +8,7 @@ const Hero6: React.FC = () => {
                 <div className="hero6-content">
                     <h6 className="hero6-title">WHY CHOOSE US</h6>
                     <h1 className="hero6-subtitle">Discover Potential Wise,</h1>
-                    <h1 className="hero6-subtitle">Gambit is the best chess school.</h1>
-                    <p className="hero6-description">Viverra dictum curae consectetur molestie orci</p>
-                    <div className="hero6-icon-boxes">
+                    <h1 className="hero6-subtitle">Gambit is the best chess school.</h1>                    <div className="hero6-icon-boxes">
                         <div className="icon-box">
                             <img src="/images/a.png" alt="Experience" />
                             <h4>Experience and Expertise</h4>
