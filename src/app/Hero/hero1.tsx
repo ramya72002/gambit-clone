@@ -9,7 +9,7 @@ const ChessComponent = () => {
                 <h6>WHO WE ARE</h6>
                 <h2>The magic of chess, beauty and complexity.</h2>
                     <div className="chess-section">
-                        <img src="" alt="Chess Club" className="chess-image" />
+                        <img src="/images/adult.png" alt="Chess Club" className="chess-image" />
                         <div>
                             <h4>Chess Club</h4>
                             <p>Dignissim mus orci pretium...</p>
