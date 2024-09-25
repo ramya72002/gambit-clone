@@ -1,5 +1,5 @@
 import React from 'react';
-import './Pricing2.scss';  // Importing SCSS file
+import './pricing2.scss';  // Importing SCSS file
 
 const Pricing2 = () => {
   return (

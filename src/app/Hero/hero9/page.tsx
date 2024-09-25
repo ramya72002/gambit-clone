@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero9.scss';
+import './hero9.scss';
 
 const Hero9: React.FC = () => {
     return (

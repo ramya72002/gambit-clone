@@ -1,5 +1,5 @@
 import React from 'react';
-import './FAQ4.scss'; // Import your SCSS styles
+import './faq4.scss'; // Import your SCSS styles
 
 const FAQ4 = () => {
     const questions = [
