@@ -31,7 +31,7 @@ const Header = () => {
             <li className="header__menu-item header__dropdown">
               <a href="/path2">Program</a>
               <div className="header__dropdown-content">
-                <a href="/mission">Detailed Program</a>
+                <a href="/detailedprogram/detail1">Detailed Program</a>
                 <a href="/team">Pricing Plan</a> 
               </div>
             </li> 
