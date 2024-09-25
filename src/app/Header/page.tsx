@@ -19,7 +19,7 @@ const Header = () => {
         {/* Right section: Navigation Menu & Button */}
         <nav className="header__nav">
           <ul className="header__menu">
-            <li className="header__menu-item"><a href="/path1">Home</a></li>
+            <li className="header__menu-item"><a href="/">Home</a></li>
             <li className="header__menu-item header__dropdown">
               <a href="/path2">About Us</a>
               <div className="header__dropdown-content">
@@ -32,7 +32,7 @@ const Header = () => {
               <a href="/path2">Program</a>
               <div className="header__dropdown-content">
                 <a href="/detailedprogram/detail1">Detailed Program</a>
-                <a href="/team">Pricing Plan</a> 
+                <a href="/pricing/pricing1">Pricing Plan</a> 
               </div>
             </li> 
             <li className="header__menu-item"><a href="/path2">Contact Us</a></li>

@@ -1,0 +1,42 @@
+.aboutUs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.aboutUs-overlay {
+  background: rgba(27, 27, 27, 0.66); // Adjust for overlay color
+  padding: 7em 0; // Top and bottom padding
+  width: 100%;
+  text-align: center;
+}
+
+.aboutUs-content {
+  max-width: 720px;
+  padding: 2em; // Adjust for tablet
+}
+
+.aboutUs-title {
+  color: white; // Replace with your desired color
+  margin-bottom: 1em;
+}
+
+.aboutUs-text {
+  color: white; // Replace with your desired color
+  margin-bottom: 2em;
+}
+
+.aboutUs-button {
+  background-color: transparent;
+  border: 2px solid white; // Replace with your desired border color
+  color: white; // Replace with your desired text color
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2); // Adjust hover effect
+  }
+}

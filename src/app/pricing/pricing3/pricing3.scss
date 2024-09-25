@@ -1,0 +1,65 @@
+.pricing3-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7em 0;
+  background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-figures-on-gray-table-background-2-e1698335576404.jpg') center center / cover no-repeat;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #1B1B1B 75%, rgba(27, 27, 27, 0.4));
+    opacity: 1;
+    z-index: 0;
+  }
+
+  .pricing3-content {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding: 2em;
+    background-color: rgba(27, 27, 27, 0.8);
+    color: white;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      width: 60%;
+      padding: 2em;
+    }
+
+    @media (max-width: 480px) {
+      width: 100%;
+      padding: 1em;
+    }
+  }
+
+  .pricing3-text {
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    p {
+      margin-bottom: 1.5em;
+    }
+
+    .pricing3-button {
+      padding: 0.8em 2em;
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: white;
+        color: #1b1b1b;
+      }
+    }
+  }
+}
