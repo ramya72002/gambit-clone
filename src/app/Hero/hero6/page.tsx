@@ -7,26 +7,27 @@ const Hero6: React.FC = () => {
             <div className="hero6-background">
                 <div className="hero6-content">
                     <h6 className="hero6-title">WHY CHOOSE US</h6>
-                    <h1 className="hero6-subtitle">Discover Potential Wise, Gambit is the best chess school.</h1>
+                    <h1 className="hero6-subtitle">Discover Potential Wise,</h1>
+                    <h1 className="hero6-subtitle">Gambit is the best chess school.</h1>
                     <p className="hero6-description">Viverra dictum curae consectetur molestie orci</p>
                     <div className="hero6-icon-boxes">
                         <div className="icon-box">
-                            <i className="mdi mdi-chess-queen"></i>
+                            <img src="/images/a.png" alt="Experience" />
                             <h4>Experience and Expertise</h4>
                             <p>Viverra dictum curae consectetur molestie orci</p>
                         </div>
                         <div className="icon-box">
-                            <i className="mdi mdi-medal"></i>
+                            <img src="/images/b.png" alt="Certification" />
                             <h4>Official Certifications</h4>
                             <p>Viverra dictum curae consectetur molestie orci</p>
                         </div>
                         <div className="icon-box">
-                            <i className="mdi mdi-home-assistant"></i>
+                            <img src="/images/c.png" alt="Facilities" />
                             <h4>Modern Facilities</h4>
                             <p>Viverra dictum curae consectetur molestie orci</p>
                         </div>
                         <div className="icon-box">
-                            <i className="mdi mdi-account-group"></i>
+                            <img src="/images/d.png" alt="Expert Lecturer" />
                             <h4>Expert Lecturer</h4>
                             <p>Viverra dictum curae consectetur molestie orci</p>
                         </div>
