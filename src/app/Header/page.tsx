@@ -21,7 +21,7 @@ const Header = () => {
           <ul className="header__menu">
             <li className="header__menu-item"><a href="/">Home</a></li>
             <li className="header__menu-item header__dropdown">
-              <a href="/path2">About Us</a>
+              <a href="/about/about1">About Us</a>
               <div className="header__dropdown-content">
                 <a href="/about/about1">Trainers</a>
                 <a href="/team">Our Team</a>
@@ -29,7 +29,7 @@ const Header = () => {
               </div>
             </li>
             <li className="header__menu-item header__dropdown">
-              <a href="/path2">Program</a>
+              <a href="/detailedprogram/detail1">Program</a>
               <div className="header__dropdown-content">
                 <a href="/detailedprogram/detail1">Detailed Program</a>
                 <a href="/pricing/pricing1">Pricing Plan</a> 
@@ -37,7 +37,7 @@ const Header = () => {
             </li> 
             <li className="header__menu-item"><a href="/path2">Contact Us</a></li>
             <li className="header__menu-item header__dropdown">
-              <a href="/path2">Pages       </a>
+              <a href="/gallary/gallary1">Pages       </a>
               <div className="header__dropdown-content">
                 <a href="/gallary/gallary1">Gallary</a>
                 <a href="/faq/faq1">FAQ</a>
