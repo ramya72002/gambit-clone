@@ -1,8 +1,4 @@
-// import Pricing2 from '../gallary2/page';
-// import Pricing3 from '../pricing3/page';
-// import Pricing4 from '../pricing4/page';
-// import Pricing5 from '../pricing5/page';
- 
+
 import React from 'react';
 import './gallary1.scss';
 import Footer from '@/app/Footer/page';
