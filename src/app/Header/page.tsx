@@ -37,7 +37,7 @@ const Header = () => {
             <li className="header__menu-item header__dropdown">
               <a href="/gallery/gallery1">Pages</a>
               <div className="header__dropdown-content">
-                <a href="/gallery/gallery1">Gallery</a>
+                <a href="/gallary/gallary1">Gallery</a>
                 <a href="/faq/faq1">FAQ</a>
                 <a href="/blog/blog1">Blog</a>
               </div>
