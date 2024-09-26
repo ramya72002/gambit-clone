@@ -32,6 +32,7 @@ const Hero4 = () => {
           alt="Chess Playing"
           className="hero-image"
         />
+        <div className="inner-hexagon"></div>
       </div>
     </div>
   );

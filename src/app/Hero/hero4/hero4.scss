@@ -23,6 +23,8 @@
     }
   
     .heading {
+      font-size: 15px;
+      font-weight: bold;
       margin-left: 70px;
       font-family: "Poppins", sans-serif;
       color: goldenrod;
@@ -32,9 +34,9 @@
     .subheading {
       margin-left: 50px;
       font-family: "Poppins", sans-serif;
-      font-size: 50px;
+      font-size: 40px;
       text-align: left;
-      font-weight: 500;
+      font-weight: 600;
     }
   
     .description {
@@ -45,13 +47,29 @@
     }
   
     .icon-box {
+      background-color: rgba(255, 255, 255, 0);
       margin-left: 40px;
       font-family: "Poppins", sans-serif;
       display: flex;
-      align-items: center;
+      align-items: start;
       margin-bottom: 1em;
+
+      h4{
+        font-weight: bold;
+        font-family: "Poppins", sans-serif;
+        color: rgb(255, 255, 255);
+      }
+      p{
+        font-family: "Poppins", sans-serif;
+        color: rgb(255, 255, 255);
+      }
   
       .icon {
+        padding: 15px;
+        border-radius: 3px;
+        height: 70px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 254, 254);
         font-size: 35px; // Adjust size based on your design
         margin-right: 10px;
       }
@@ -63,15 +81,32 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    
     @media (max-width: 768px) {
       width: 100%;
     }
   
     .hero-image {
-      width: 100%;
-      height: auto; // or fixed height based on your design
-      object-fit: cover; // Adjusts the image to cover the area
+      width: 90%;
+      height: 85%; // Keep the aspect ratio intact
+      object-fit: cover;
+      clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+      transition: transform 0.3s ease; // Add some transition for hover effect
+  
+      &:hover {
+        transform: scale(1.05); // Slight zoom effect on hover
+      }
+    }
+    .inner-hexagon {
+      position: absolute;
+      top: 15%; // Position it slightly inside the main hexagon
+      left: 15%;
+      width: 70%;
+      height: 70%;
+      background-color: rgba(255, 255, 255, 0.514); // Make it semi-transparent
+      clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+      z-index: 1; // Make sure it's on top of the image
+      pointer-events: none; // Ensures the hover effect on the image still works
     }
   }
   
