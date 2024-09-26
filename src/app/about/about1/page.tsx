@@ -6,6 +6,7 @@ import About3 from '../about3/page';
 import About4 from '../about4/page';
 import About5 from '../about5/page';
 import Header from '@/app/Header/page';
+import Footer from '@/app/Footer/page';
 
 // Define a union type for text alignment
 type TextAlign = 'left' | 'right' | 'center' | 'justify';
@@ -164,6 +165,7 @@ const About1: React.FC = () => {
      <About3 />
      <About4 />
      <About5 />
+     <Footer />
      </div>
   );
 };
