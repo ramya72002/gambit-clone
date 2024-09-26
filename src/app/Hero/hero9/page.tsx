@@ -19,7 +19,7 @@ const Hero9 = () => {
         <div className="hero9-content">
           <h1 className="hero9-title">Experience the Future of Chess Training! Try Our Fastest Strategy Now!</h1>
           <p className="hero9-description">
-            Discover the most effective methods for mastering chess strategies.
+            Discover the most effective methods for mastering chess strategies .
           </p>
           <button className="hero9-button">DISCOVER MORE</button>
         </div>
