@@ -1,12 +1,12 @@
 // components/About1.tsx
 import React from 'react';
 import './about1.scss'; // Import the SCSS file for styles
-import About2 from '../about2/page';
 import About3 from '../about3/page';
 import About4 from '../about4/page';
 import About5 from '../about5/page';
 import Header from '@/app/Header/page';
 import Footer from '@/app/Footer/page';
+// import Hero1 from '@/app/Hero/hero1';
 
 // Define a union type for text alignment
 type TextAlign = 'left' | 'right' | 'center' | 'justify';
@@ -106,7 +106,7 @@ const About1: React.FC = () => {
           {
             id: "22719bfa",
             settings: {
-              title: "Heading",
+              title: "About Us",
               header_size: "h1",
               align: "center" as TextAlign // Explicitly cast to TextAlign
             },
@@ -161,7 +161,7 @@ const About1: React.FC = () => {
       </div>
      
     </div>
-     <About2 />
+     {/* <Hero1 /> */}
      <About3 />
      <About4 />
      <About5 />
