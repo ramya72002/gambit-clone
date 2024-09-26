@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 .header {
+ 
   position: relative;
   // z-index: 90;
   background-color: #0C0C0C; // Darker for a sleek look
@@ -8,6 +9,7 @@
   font-family: 'Poppins', sans-serif;
 
   &__container {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,6 +77,7 @@
   }
 
   &__join-btn {
+    margin-top: 20px;
     padding: 10px 20px;
     border: 2px solid #FFD700;
     color: #FFD700;
