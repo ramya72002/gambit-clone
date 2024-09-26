@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero5.scss'; // Import your SCSS file here
+import './hero5.scss'; // Import your SCSS file here
 
 const Hero5 = () => {
     return (
