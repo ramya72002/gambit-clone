@@ -13,7 +13,7 @@ import Pricing4 from './pricing/pricing4/page'
 import Pricing5 from './pricing/pricing5/page'
 const Home = () => {
   return (
-  <div>
+    <div style={{ overflowX: 'hidden' }}>
     <Header />
     <Hero />
     <Hero1 />
