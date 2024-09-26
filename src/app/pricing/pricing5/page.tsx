@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useRef } from 'react';
 import './pricing5.scss';
 
 const testimonials = [
@@ -29,6 +30,23 @@ const testimonials = [
 ];
 
 const Pricing5 = () => {
+  // Provide the type for the ref, in this case, HTMLDivElement
+  const testimonialsRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const scrollTestimonials = () => {
+      if (testimonialsRef.current) {
+        testimonialsRef.current.scrollBy({
+          left: 300, // Change this value to adjust the scroll distance
+          behavior: 'smooth',
+        });
+      }
+    };
+
+    const interval = setInterval(scrollTestimonials, 3000); // Scroll every 3 seconds
+    return () => clearInterval(interval); // Cleanup the interval on unmount
+  }, []);
+
   return (
     <div className="pricing5-container" style={{ backgroundImage: `url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-player-hitting-the-chess-clock-e1697916105818.jpg')` }}>
       <div className="testimonial-section">
@@ -38,7 +56,7 @@ const Pricing5 = () => {
           Hear what our students have to say about our teaching methods and chess instruction.
         </p>
 
-        <div className="testimonials-wrapper">
+        <div className="testimonials-wrapper" ref={testimonialsRef}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="testimonial-card">
               <img src={testimonial.client_photo} alt={testimonial.client_name} className="testimonial-photo" />
