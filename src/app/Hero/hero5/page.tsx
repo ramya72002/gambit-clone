@@ -11,16 +11,16 @@ const Hero5 = () => {
             <div className="hero5-boxes" style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
                 {/* Box 1 */}
                 <div className="hero5-box" style={{ width: '33%', textAlign: 'left', padding: '2em' }}>
-                    <div className="icon-box" style={{ border: '1px solid #ccc', padding: '2em', borderRadius: '5px' }}>
-                        <i className="fas fa-chess-pawn" style={{ fontSize: '28px', marginBottom: '7px' }}></i>
-                        <div className="icon-box-title" style={{ marginBottom: '7px' }}>Adult</div>
+                    <div className="icon-box" style={{ border: '1px solid #ccc', padding: '2em', borderRadius: '5px',backgroundColor:'black',color:'white' }}>
+                        <i className="fas fa-chess-pawn" style={{ fontSize: '28px', marginBottom: '7px' ,backgroundColor:'white',color:'black'}}></i>
+                        <div className="icon-box-title" style={{ marginBottom: '7px' ,color:'white'}}>Adult</div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                     </div>
                 </div>
                 {/* Box 2 */}
                 <div className="hero5-box" style={{ width: '33%', textAlign: 'left', padding: '2em' }}>
-                    <div className="icon-box" style={{ border: '1px solid #ccc', padding: '2em', borderRadius: '5px' }}>
-                        <i className="fas fa-chess-bishop" style={{ fontSize: '28px', marginBottom: '7px' }}></i>
+                    <div className="icon-box" style={{ border: '1px solid #ccc', padding: '2em', borderRadius: '5px',backgroundColor:'black',color:'white'  }}>
+                        <i className="fas fa-chess-bishop" style={{ fontSize: '28px', marginBottom: '7px',backgroundColor:'white',color:'black' }}></i>
                         <div className="icon-box-title" style={{ marginBottom: '7px' }}>Private</div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                     </div>
