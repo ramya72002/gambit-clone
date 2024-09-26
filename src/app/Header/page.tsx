@@ -35,12 +35,11 @@ const Header = () => {
             </li> 
             <li className="header__menu-item"><a href="/contact">Contact Us</a></li>
             <li className="header__menu-item header__dropdown">
-              <a href="/gallary/gallary1">Pages       </a>
+              <a href="/gallery/gallery1">Pages</a>
               <div className="header__dropdown-content">
-                <a href="/gallary/gallary1">Gallary</a>
+                <a href="/gallery/gallery1">Gallery</a>
                 <a href="/faq/faq1">FAQ</a>
                 <a href="/blog/blog1">Blog</a>
-                {/* <a href="/singlepost">Single Post</a> */}
               </div>
             </li> 
           </ul>
