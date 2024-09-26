@@ -4,7 +4,7 @@ import './gallary1.scss';
 import Footer from '@/app/Footer/page';
 import Header from '@/app/Header/page';
 import Gallery2 from '../gallary2/page';
-import Gallery3 from '../gallary3/page';
+import Pricing5 from '@/app/pricing/pricing5/page';
 
 const Gallery = () => {
   const images = [
@@ -40,7 +40,7 @@ const Gallery = () => {
       </div>
     </div>
     <Gallery2 /> 
-    <Gallery3 /> 
+    <Pricing5 /> 
     <Footer />
     </div>
   );
