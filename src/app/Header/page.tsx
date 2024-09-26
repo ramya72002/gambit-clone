@@ -24,8 +24,6 @@ const Header = () => {
               <a href="/about/about1">About Us</a>
               <div className="header__dropdown-content">
                 <a href="/about/about1">Trainers</a>
-                <a href="/team">Our Team</a>
-                <a href="/history">Our History</a>
               </div>
             </li>
             <li className="header__menu-item header__dropdown">
