@@ -3,9 +3,9 @@ import './detail1.scss'; // Adjust the path as needed
 import Header from '@/app/Header/page';
 import Detail2 from '../detail2/page';
 import Detail3 from '../deatil3/page';
-import Detail4 from '../deatil4/page';
 import Detail5 from '../detail5/page';
 import Footer from '@/app/Footer/page';
+import Pricing4 from '@/app/pricing/pricing4/page';
 
 const DetailedProgram = () => {
   return (
@@ -35,7 +35,7 @@ const DetailedProgram = () => {
     </div>
     <Detail2 />
     <Detail3 />
-    <Detail4 />
+    <Pricing4 />
     <Detail5 />
     <Footer />
     </div>
