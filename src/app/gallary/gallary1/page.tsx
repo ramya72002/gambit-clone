@@ -19,9 +19,11 @@ const Gallery = () => {
   return (
    
     <div>
-      <Header />
+      
     <div className="gallery-container">
+    
       <div className="header-section">
+      <Header />
         <h1>Together with Gambit Chess School Towards Excellence</h1>
         <h4>In every chess position, there are opportunities.</h4>
       </div>

@@ -1,14 +1,22 @@
 .contact-section {
     padding: 0% 0;
+    position: relative; // Added to position the header correctly
   }
   
   .contact-header {
-    padding: 15% 2% 0 2%;
+    padding: 0% 2% 15% 2%;
     color: #fff;
+    
     text-align: center;
+      background-color: rgba(0, 0, 0, 0.5); // Add a dark overlay on the image
+      // padding: 0em 3em;
+      color: white;
+      text-align: center;
   }
   
   .title {
+    margin-top: 80px;
+    font-weight: 'bold';
     font-size: 3rem;
   }
   

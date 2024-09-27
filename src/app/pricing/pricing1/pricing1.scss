@@ -1,21 +1,11 @@
 .pricing1-container {
   display: flex;
-  flex-direction: row;
-  padding-top: 5%;
+  flex-direction: column; // Use column to stack the header and content
   background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-concept-for-competition-and-strategy-5-e1698108442507.jpg') center center/cover no-repeat;
   position: relative;
+  min-height: 95vh; // Make sure it covers the viewport height
   text-align: center;
-  
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); // Overlay color
-    z-index: 1;
-  }
+ 
 }
 
 .pricing1-content {
@@ -35,6 +25,11 @@
 .pricing1-subheading {
   font-size: 1.5rem;
   color: #fff;
+}
+
+.header-container {
+  z-index: 2; // Ensure it is above the overlay
+  width: 100%;
 }
 
 @media (max-width: 768px) {

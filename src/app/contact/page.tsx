@@ -6,8 +6,9 @@ import Header from '@/app/Header/page';
 const Contact = () => {
   return (
     <div>
-                  <Header />
+                
     <div className="contact-section">
+      
       <div
         className="contact-header"
         style={{
@@ -16,6 +17,7 @@ const Contact = () => {
           backgroundSize: 'cover',
         }}
       >
+          <Header />
         <h1 className="title">Contact</h1>
         <h4 className="subtitle">We would love to hear from you.</h4>
       </div>
