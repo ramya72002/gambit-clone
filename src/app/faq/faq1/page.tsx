@@ -8,8 +8,9 @@ import FAQ4 from '../faq4/page';
 const FAQ = () => {
     return (
         <div>
-                  <Header />
+                  
         <section className="faq-section" style={{ backgroundImage: `url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-concept-for-competition-and-strategy-5-e1698108442507.jpg')` }}>
+        <Header />
             <div className="faq-container">
                 <h1 className="faq-title">Heading</h1>
                 <h4 className="faq-subtitle">Frequently asked questions.</h4>

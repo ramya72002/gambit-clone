@@ -1,22 +1,22 @@
 .faq-section {
-  padding: 7% 0; // Adjust as needed
+  padding: 1% 0; // Adjust as needed
   background-position: center center;
   background-size: cover;
 
   .faq-container {
       max-width: 720px;
       margin: 0 auto;
-      padding: 7em 2em;
+      padding: 5em 2em;
 
       .faq-title {
           text-align: center;
-          color: #000; // Replace with your global color
+          color: #f5f0f0; // Replace with your global color
           margin: 0;
       }
 
       .faq-subtitle {
           text-align: center;
-          color: #000; // Replace with your global color
+          color: #f0e9e9; // Replace with your global color
           margin: 1em 0;
       }
 
@@ -33,7 +33,7 @@
 
               .faq-answer {
                   margin-top: 0.5em;
-                  color: #333; // Adjust color as needed
+                  color: #f7f6f6; // Adjust color as needed
               }
           }
       }

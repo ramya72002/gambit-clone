@@ -7,8 +7,9 @@ import Header from '@/app/Header/page';
 const Blog1 = () => {
   return (
     <div>
-                  <Header />
+                  
     <div className="blog1-container" style={{ backgroundImage: `url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/outstanding-person-standing-out-from-the-crowd-and-catching-audience-attention-e1698220270855.jpg')` }}>
+    <Header />
       <div className="blog1-header">
         <h1>Article & News</h1>
         <h3>{/* You may want to replace this with dynamic content for the archive title */}Heading</h3>
