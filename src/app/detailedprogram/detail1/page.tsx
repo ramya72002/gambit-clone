@@ -1,5 +1,5 @@
 import React from 'react';
-import './Detail1.scss'; // Adjust the path as needed
+import './detail1.scss'; // Adjust the path as needed
 import Header from '@/app/Header/page';
 import Detail2 from '../detail2/page';
 import Footer from '@/app/Footer/page';
