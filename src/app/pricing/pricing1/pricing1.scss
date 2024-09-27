@@ -1,9 +1,10 @@
 .pricing1-container {
   display: flex;
   flex-direction: row;
-  padding-top: 7%;
+  padding-top: 5%;
   background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-concept-for-competition-and-strategy-5-e1698108442507.jpg') center center/cover no-repeat;
   position: relative;
+  text-align: center;
   
   &::before {
     content: "";

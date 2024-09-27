@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .hero {
-    background-image: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-e1698215305281.jpg');
-    background-position: center center;
-    background-size: cover;
-    padding: 0% 14% 0% 3%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: #fff;
-    flex-direction: column;
-    z-index: 3;
+  background-image: url('/images/c1.jpg'); // Adjust the path if needed
+  background-position: center center;
+  background-size: cover;
+  padding: 0% 10% 0% 3%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: #fff;
+  flex-direction: column;
+  z-index: 3;
   
     &-content {
       width: 100%; // Adjusted for full width in column layout
-      padding: 7em 1em 12em 1em;
+      padding: 5em 1em 12em 1em;
   
       .hero-title {
         font-family: "Poppins", sans-serif;

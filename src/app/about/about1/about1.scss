@@ -1,30 +1,78 @@
-// components/About1.scss
-.about1 {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.header {
+  position: absolute; /* Ensures the header overlays the content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent; /* Transparent background */
+  z-index: 10; /* Higher z-index to overlay the image */
+  padding: 20px 0; /* Adds space around the header */
+  font-family: 'Poppins', sans-serif;
+
+  &__container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5); // Optional overlay for readability
-    padding: 20px;
-  
-    &__content {
-      max-width: 720px; // Match the boxed width from JSON
-      padding: 2em; // Padding from JSON
-      color: #fff; // Text color
-    }
-  
-    &__heading {
-      margin: 0; // Reset margins
-      font-size: 2em; // Default heading size
-    }
-  
-    &__heading--h1 {
-      font-size: 2.5em; // Specific style for h1
-    }
-  
-    &__heading--h4 {
-      font-size: 1.5em; // Specific style for h4
-      margin-top: 1em; // Margin for spacing
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    width: 15%;
+    img {
+      height: 42px;
+      @media (max-width: 768px) {
+        height: 35px;
+      }
+      @media (max-width: 480px) {
+        height: 28px;
+      }
     }
   }
-  
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 30px;
+    &-item {
+      list-style: none;
+      a {
+        color: #ffffff;
+        font-weight: 500;
+        text-decoration: none;
+        padding: 10px 15px;
+        transition: color 0.3s ease;
+        &:hover {
+          color: #FFD700; /* Golden hover color */
+        }
+      }
+    }
+  }
+
+  &__join-btn {
+    padding: 10px 20px;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: #FFD700;
+      color: #0C0C0C;
+    }
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}

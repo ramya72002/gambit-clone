@@ -1,28 +1,33 @@
-// components/About1.scss
-.about1 {
-    display: flex;
-    flex-direction: column;
-    color: #fff; // Text color
-    background-color: rgba(0, 0, 0, 0.5); 
-  
-    &__content {
-      max-width: 720px; // Match the boxed width from JSON
-      padding: 2em; // Padding from JSON
-      color: #fff; // Text color
-    }
-  
-    &__heading {
-      margin: 0; // Reset margins
-      font-size: 3em; // Default heading size
-    }
-  
-    &__heading--h1 {
-      font-size: 2.5em; // Specific style for h1
-    }
-  
-    &__heading--h4 {
-      font-size: 1.5em; // Specific style for h4
-      margin-top: 1em; // Margin for spacing
-    }
-  }
-  
+.detailedProgram-container {
+  position: relative;
+  background-position: center center;
+  background-size: cover;
+  // padding-top: 7%;
+  opacity: 100%;
+}
+
+.detailedProgram-overlay {
+  background-color: rgba(0, 0, 0, 0.5); // Add a dark overlay on the image
+  // padding: 0em 3em;
+  color: white;
+  text-align: center;
+}
+
+.detailedProgram-title {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.detailedProgram-text {
+  color: white;
+  // margin-top: 1em;
+}
+
+.header-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; // Ensure the header stays on top of the image
+}

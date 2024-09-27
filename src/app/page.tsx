@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './Header/page'
+// import Header from './Header/page'
 import Hero from './Hero/page'
 import Hero1 from './Hero/hero1'
 import Hero2 from './Hero/hero2/page'
@@ -14,7 +14,7 @@ import Pricing5 from './pricing/pricing5/page'
 const Home = () => {
   return (
     <div style={{ overflowX: 'hidden' }}>
-    <Header />
+    
     <Hero />
     <Hero1 />
     <Hero2 />
