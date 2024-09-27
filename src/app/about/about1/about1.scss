@@ -1,4 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+.about1 {
+  position: relative;
+
+  &__content {
+    position: absolute; /* Positioning the content over the background image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    text-align: center; /* Center text */
+    color: #ffffff; /* Set text color to white */
+
+    h1 {
+      font-size: 3em; /* Adjust as needed */
+      font-weight: 600; /* Use bold font weight */
+    }
+
+    &--h4 {
+      font-size: 1.5em; /* Adjust as needed */
+      margin-top: 0.5em;
+      font-weight: 400; /* Use normal font weight */
+      color: #ffffff; /* Ensure h4 text is also white */
+    }
+  }
+}
 
 .header {
   position: absolute; /* Ensures the header overlays the content */
