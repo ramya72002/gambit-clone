@@ -28,11 +28,11 @@ const Hero4 = () => {
       </div>
       <div className="image-container">
         <img
-          src="http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-playing-e1697916016480.jpg"
+          src="/images/hero4.png"
           alt="Chess Playing"
           className="hero-image"
         />
-        <div className="inner-hexagon"></div>
+        
       </div>
     </div>
   );

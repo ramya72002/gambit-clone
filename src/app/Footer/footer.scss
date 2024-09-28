@@ -130,7 +130,7 @@
                 }
 
                 button {
-                    width: 100%;
+                    width: 98%;
                     padding: 0.5em 1em;
                     background-color: #000000;
                     color: #ffffff;
@@ -140,7 +140,8 @@
                     transition: background-color 0.3s;
 
                     &:hover {
-                        background-color: #b354b5;
+                        color: rgb(255, 255, 255);
+                        background-color: #753c0d;
                     }
                 }
             }
