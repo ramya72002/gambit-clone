@@ -12,9 +12,9 @@ const Hero1 = () => {
           <p className="description">
             Dignissim mus orci pretium leo nascetur nam aliquet metus feugiat faucibus luctus.
           </p>
-          
+
           <div className="icon-box">
-          <i className="fa-solid fa-chess-king"></i>
+            <i className="fa-solid fa-chess-king"></i>
             <div className="icon-content">
               <h4>Chess Club</h4>
               <p>Dignissim mus orci pretium leo nascetur nam aliquet metus feugiat faucibus luctus</p>
@@ -28,12 +28,19 @@ const Hero1 = () => {
               <p>Dignissim mus orci pretium leo nascetur nam aliquet metus feugiat faucibus luctus</p>
             </div>
           </div>
+
+          {/* Images for Chess Club and Chess Training Center */}
+          <div className="image-section">
+            <img src="http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-club-image.png" alt="Chess Club" className="chess-image" />
+            <img src="http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-training-center-image.png" alt="Chess Training Center" className="chess-image" />
+          </div>
         </div>
 
         {/* Right section with background image */}
         <div className="content-right">
           <div className="image-overlay">
             <div className="image-section">
+              {/* This section will now be moved below in mobile view */}
               <h4 className="passion-dedication">
                 Full of passion and dedication. Welcome to a chess school that is always ready to help you improve
               </h4>
