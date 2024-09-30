@@ -1,97 +1,165 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .hero6-container {
-    height: 650px;
-    display: flex;
-    flex-direction: row;
-    background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-concept-for-competition-and-strategy-6-e1698108470123.jpg') 
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chess-board-game-concept-for-competition-and-strategy-6-e1698108470123.jpg')
     center center / cover no-repeat;
-    padding: 5em 0 0;
-    margin: 0;
-    opacity: 200%;
-    position: relative; // Keep this to make sure the ::after is positioned relative to the container
+  padding: 5em 0 0;
+  margin: 0;
+  opacity: 200%;
+  position: relative;
 
-    &::after {
-        content: '';
-        position: absolute; // Changed to absolute to cover the container
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(104, 104, 104, 0); // Semi-transparent dark overlay
-        z-index: 1; // Ensures the overlay is above the background but below content
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(104, 104, 104, 0);
+    z-index: 1;
+  }
+
+  .hero6-content {
+    z-index: 1;
+    color: #fff;
+    padding: 1em 5em;
+
+    .hero6-title {
+      font-family: 'Poppins', sans-serif;
+      color: goldenrod;
+      font-size: 1.2rem;
+      text-align: left;
     }
+
+    .hero6-subtitle {
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem;
+      text-align: left;
+    }
+
+    .hero6-icon-boxes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      .icon-box {
+        width: 200px;
+        background: black;
+        padding: 1em;
+        border-radius: 8px;
+        text-align: left;
+        flex: 1 1 calc(50% - 20px);
+
+        img {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 0.5em;
+        }
+
+        h4 {
+          font-family: 'Poppins', sans-serif;
+          margin: 0.5em 0;
+        }
+
+        p {
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .hero6-image {
+    z-index: 1;
+    transform: translateX(700px) translateY(-450px);
+    margin-top: -20em;
+
+    img {
+      width: 100%;
+      height: 900px;
+      object-fit: contain;
+    }
+  }
+}
+
+/* Tablet view */
+@media screen and (max-width: 1024px) {
+  .hero6-container {
+    flex-direction: column;
+    height: auto;
+
     .hero6-content {
-        z-index: 1;
-        color: #fff;
-        padding: 1em 5em;
+      padding: 2em 2em;
 
-        .hero6-title {
-            font-family: "Poppins", sans-serif;
-            color: goldenrod;
-            font-size: 0rem;
-            text-align: left;
+      .hero6-subtitle {
+        font-size: 2.5rem;
+      }
+
+      .hero6-icon-boxes {
+        flex-direction: column;
+        align-items: center;
+
+        .icon-box {
+          width: 100%;
+          text-align: center;
+
+          img {
+            margin: 0 auto 0.5em auto;
+          }
         }
-
-        .hero6-subtitle {
-            font-weight: 500;
-            font-family: "Poppins", sans-serif;
-            font-size: 3rem;
-            text-align: left;
-        }
-
-        .hero6-description {
-            font-family: "Poppins", sans-serif;
-            margin: 1em 0;
-            text-align: left;
-        }
-
-        .hero6-icon-boxes {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-
-            .icon-box {
-                width: 200px;
-                background: black;
-                padding: 1em;
-                border-radius: 8px;
-                border-color: black;
-                text-align: left;
-                flex: 1 1 calc(50% - 20px); // Responsive
-
-                img {
-                    width: 50px;  // Adjust the size of the image as necessary
-                    height: 50px;
-                    margin-bottom: 0.5em;
-                }
-
-                h4 {
-                    font-family: "Poppins", sans-serif;
-                    margin: 0.5em 0;
-                }
-
-                p {
-                    font-family: "Poppins", sans-serif;
-                    margin: 0;
-                }
-
-                i {
-                    font-size: 2rem;
-                    margin-bottom: 0.5em;
-                }
-            }
-        }
+      }
     }
 
     .hero6-image {
-        z-index: 1;
-        transform: translateX(700px) translateY(-450px);
-        margin-top: -20em;
+      transform: none;
+      margin-top: 2em;
 
-        img {
-            width: 100%;
-            height: 900px; // Adjust as needed
-            object-fit: contain;
-        }
+      img {
+        height: auto;
+        max-height: 400px;
+      }
     }
+  }
+}
+
+/* Mobile view */
+@media screen and (max-width: 768px) {
+  .hero6-container {
+    padding: 2em 1em;
+
+    .hero6-content {
+      padding: 1em 1em;
+
+      .hero6-subtitle {
+        font-size: 1.8rem;
+      }
+
+      .hero6-icon-boxes {
+        flex-direction: column;
+        gap: 10px;
+
+        .icon-box {
+          width: 100%;
+          text-align: center;
+
+          img {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .hero6-image {
+      margin-top: 1em;
+
+      img {
+        height: auto;
+        max-height: 300px;
+      }
+    }
+  }
 }
