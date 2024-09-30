@@ -14,7 +14,7 @@ const Hero1 = () => {
           </p>
           
           <div className="icon-box">
-          <i className="fa-solid fa-chess-king"></i>
+            <i className="fa-solid fa-chess-king"></i>
             <div className="icon-content">
               <h4>Chess Club</h4>
               <p>Dignissim mus orci pretium leo nascetur nam aliquet metus feugiat faucibus luctus</p>
