@@ -19,23 +19,25 @@ const Footer = () => {
                     <a href="#" aria-label="YouTube"><i className="fab fa-youtube"></i></a>
                 </div>
                 <div className="footer-links">
-                    <h5>Company</h5>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Leadership</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Article & News</a></li>
-                        <li><a href="#">Legal Notice</a></li>
-                    </ul>
-                </div>
-                <div className="footer-links">
-                    <h5>Support</h5>
-                    <ul>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Ticket Support</a></li>
-                        <li><a href="#">Online Support</a></li>
-                    </ul>
+                    <div className="footer-links-column">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Leadership</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Article & News</a></li>
+                            <li><a href="#">Legal Notice</a></li>
+                        </ul>
+                    </div>
+                    <div className="footer-links-column">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Ticket Support</a></li>
+                            <li><a href="#">Online Support</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div className="footer-newsletter">
                     <h5>Newsletter</h5>
@@ -54,3 +56,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

@@ -3,9 +3,9 @@
     padding: 2em 0;
 
     .footer-content {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
-        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center align items */
         max-width: 1200px;
         margin: 0 auto;
 
@@ -31,15 +31,17 @@
                 margin: 0.5em 0;
                 color: #181818;
                 text-align: justify;
+                text-align: center; /* Center align text */
             }
         }
 
+        /* Social Icons */
         .footer-social {
-            transform: translateX(-23px) translateY(-90px);
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 2em;
+            margin-bottom: 1em;
 
             a {
                 color: #707070;
@@ -52,56 +54,48 @@
             }
         }
 
-        /* Second Column (Company Links) */
-        .footer-links:nth-child(4) {
-            transform: translateY(-220px);
-            grid-column: 2; /* Company links in the second column */
-            h5 {
-                font-size: 18px;
-                font-weight: bold;
-                margin-bottom: 0.5em;
-                color: #2e2e2e;
-                text-align: center;
-            }
+        /* Links Section */
+        .footer-links {
+            display: flex;
+            justify-content: space-between; /* Space between Company and Support */
+            width: 100%; /* Full width */
+            margin-bottom: 1em;
 
-            ul {
-                list-style: none;
-                padding: 0;
-                text-align: center;
+            .footer-links-column {
+                h5 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 0.5em;
+                    color: #2e2e2e;
+                    text-align: center; /* Center align headings */
+                }
 
-                li {
-                    margin: 0.5em 0;
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    text-align: center; /* Center align text in list */
 
-                    a {
-                        text-decoration: none;
-                        color: #141414;
+                    li {
+                        margin: 0.5em 0;
 
-                        &:hover {
-                            color: #dc69ef;
+                        a {
+                            text-decoration: none;
+                            color: #141414;
+
+                            &:hover {
+                                color: #dc69ef;
+                            }
                         }
                     }
                 }
             }
         }
 
-        /* Third Column (Support Links) */
-        .footer-links:nth-child(5) {
-            color: #141414;
-            transform: translateY(-220px);
-            grid-column: 3; /* Support links in the third column */
-            h5 {
-                font-size: 18px;
-                font-weight: bold;
-                margin-bottom: 0.5em;
-                color: #000000;
-            }
-        }
-
-        /* Fourth Column (Newsletter) */
+        /* Newsletter Section */
         .footer-newsletter {
-            transform: translateY(-220px);
-            grid-column: 4; /* Newsletter in the fourth column */
             text-align: left;
+            text-align: center; /* Center align newsletter */
+            margin-bottom: 1em;
 
             h5 {
                 font-size: 18px;
@@ -117,7 +111,7 @@
 
             form {
                 display: flex;
-                flex-direction: column; /* Change to column layout */
+                flex-direction: column;
                 align-items: center;
                 gap: 0.5em;
 
@@ -154,5 +148,23 @@
         color: #6c757d;
         margin-top: 2em;
         border-top: 1px solid #e9ecef;
+    }
+
+    @media (max-width: 768px) { /* Media query for mobile view */
+        .footer-content {
+            .footer-links {
+                flex-direction: row; /* Stack links vertically */
+                align-items: center; /* Center align the links */
+                // margin-left:200px;
+                // margin-right: 200px;
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+
+            .footer-links-column {
+                // width: 10%; /* Full width for each column */
+                margin-bottom: 0em; /* Space between columns */
+            }
+        }
     }
 }
