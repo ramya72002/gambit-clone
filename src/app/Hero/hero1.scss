@@ -1,114 +1,238 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
 .hero1 {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 7em 0;
+
+  .container {
     display: flex;
-    flex-direction: row;
-    background-color: white; /* Set the background color as white */
-    padding: 7em 0;
-  
-    .container {
+    width: 100%;
+  }
+
+  .content-left {
+    flex: 0 0 40%;
+    padding: 3em 5em 3em 1em;
+
+    h6.who-we-are {
+      font-family: "Poppins", sans-serif;
+      margin-left: 70px;
+      font-size: 1rem;
+      font-weight: 700;
+      color: goldenrod;
+    }
+
+    h1.main-title {
+      font-family: "Poppins", sans-serif;
+      margin-left: 70px;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #000;
+    }
+
+    p.description {
+      font-family: "Poppins", sans-serif;
+      margin-left: 70px;
+      font-size: 1rem;
+      color: #666;
+    }
+
+    .icon-box {
+      font-family: "Poppins", sans-serif;
+      margin-left: 70px;
       display: flex;
-      width: 100%;
-    }
-  
-    .content-left {
-      flex: 0 0 40%;
-      padding: 3em 5em 3em 1em;
-  
-      h6.who-we-are {
-        font-family: "Poppins", sans-serif;
-        margin-left: 70px;
-        font-size: 1rem;
-        font-weight: 700;
-        color: goldenrod; /* Adjust to desired color */
+      align-items: center;
+      margin-top: 2em;
+
+      i {
+        font-size: 28px;
+        margin-right: 370px;
+        color: #333;
       }
-  
-      h1.main-title {
-        font-family: "Poppins", sans-serif;
-        margin-left: 70px;
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #000; /* Adjust to desired color */
-      }
-  
-      p.description {
-        font-family: "Poppins", sans-serif;
-        margin-left: 70px;
-        font-size: 1rem;
-        color: #666; /* Adjust as needed */
-      }
-  
-      .icon-box {
-        font-family: "Poppins", sans-serif;
-        margin-left: 70px;
-        display: flex;
-        align-items: center;
-        margin-top: 2em;
-  
-        i {
-          font-size: 28px;
-          margin-right: 370px;
-          color: #333; /* Icon color */
+
+      .icon-content {
+        h4 {
+          font-size: 1.5rem;
+          color: #000;
         }
-  
-        .icon-content {
-          h4 {
-            font-size: 1.5rem;
-            color: #000; /* Title color */
-          }
-  
-          p {
-            font-size: 1rem;
-            color: #666; /* Text color */
-          }
-        }
-      }
-    }
-  
-    .content-right {
-      flex: 0 0 60%;
-      background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chessboard-with-black-chess-figures-isolated-on-black-e1698059185527.jpg')
-        center center no-repeat;
-      background-size: cover;
-      position: relative;
-  
-      .image-overlay {
-        background: radial-gradient(circle, rgba(27, 27, 27, 0.8) 75%, rgba(27, 27, 27, 0.8) 100%);
-        display: flex;
-        flex-wrap: wrap;
-        padding: 2em;
-  
-        .image-section {
-          flex: 1;
-          padding: 2em;
-  
-          h4.passion-dedication {
-            font-size: 1.5rem;
-            color: #fff;
-          }
-  
-          img {
-            max-width: 100%;
-            height: auto;
-          }
-  
-          h6.gm-name {
-            font-size: 1rem;
-            color: #fff;
-          }
-        }
-  
-        .image-container {
-          flex: 1;
-          display: flex;
-          justify-content: flex-end;
-  
-          img {
-            max-width: 100%;
-            height: 640px;
-            object-fit: cover;
-          }
+
+        p {
+          font-size: 1rem;
+          color: #666;
         }
       }
     }
   }
-  
+
+  .content-right {
+    flex: 0 0 60%;
+    background: url('http://kit.creativemox.com/gambit/wp-content/uploads/sites/10/2023/10/chessboard-with-black-chess-figures-isolated-on-black-e1698059185527.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    .image-overlay {
+      background: radial-gradient(circle, rgba(27, 27, 27, 0.8) 75%, rgba(27, 27, 27, 0.8) 100%);
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2em;
+
+      .image-section {
+        flex: 1;
+        padding: 2em;
+
+        h4.passion-dedication {
+          font-size: 1.5rem;
+          color: #fff;
+        }
+
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        h6.gm-name {
+          font-size: 1rem;
+          color: #fff;
+        }
+      }
+
+      .image-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+
+        img {
+          max-width: 100%;
+          height: 640px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  /* Tablet View */
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding: 4em 0;
+
+    .content-left, .content-right {
+      flex: 100%;
+      padding: 2em;
+    }
+
+    .content-left {
+      padding: 2em 2em 2em 1em;
+
+      h1.main-title {
+        font-size: 2rem;
+      }
+
+      p.description {
+        font-size: 0.9rem;
+      }
+
+      .icon-box {
+        i {
+          margin-right: 20px;
+        }
+
+        .icon-content {
+          h4 {
+            font-size: 1.3rem;
+          }
+
+          p {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .content-right {
+      background-position: center;
+      background-size: cover;
+
+      .image-container img {
+        height: 400px;
+      }
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 3em 1em;
+
+    .content-left {
+      padding: 1em;
+      text-align: center;
+
+      h6.who-we-are {
+        margin-left: 0;
+      }
+
+      h1.main-title {
+        font-size: 1.8rem;
+        margin-left: 0;
+      }
+
+      p.description {
+        margin-left: 0;
+        font-size: 0.9rem;
+      }
+
+      .icon-box {
+        margin-left: 0;
+        justify-content: center;
+
+        i {
+          font-size: 24px;
+          margin-right: 10px;
+        }
+
+        .icon-content {
+          h4 {
+            font-size: 1.2rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .content-right {
+      padding: 1em;
+      background-position: center;
+      background-size: cover;
+
+      .image-overlay {
+        flex-direction: column;
+        padding: 1em;
+
+        .image-section {
+          padding: 1em;
+          text-align: center;
+
+          img {
+            max-width: 80%;
+          }
+
+          h4.passion-dedication {
+            font-size: 1.2rem;
+          }
+
+          h6.gm-name {
+            font-size: 0.9rem;
+          }
+        }
+
+        .image-container img {
+          height: 300px;
+        }
+      }
+    }
+  }
+}
