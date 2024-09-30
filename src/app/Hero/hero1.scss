@@ -63,6 +63,19 @@
         }
       }
     }
+
+    // New styles for images
+    .image-section {
+      margin-top: 2em; // Add margin for spacing
+      display: flex;
+      flex-direction: column; // Stack images vertically
+
+      .chess-image {
+        max-width: 100%;
+        height: auto; // Maintain aspect ratio
+        margin: 1em 0; // Add margin between images
+      }
+    }
   }
 
   .content-right {
@@ -111,7 +124,7 @@
     }
   }
 
-  /* Tablet View */
+  /* Tablet and Mobile Styles */
   @media (max-width: 1024px) {
     flex-direction: column;
     padding: 4em 0;
@@ -147,14 +160,41 @@
           }
         }
       }
+
+      .image-section {
+        .chess-image {
+          max-width: 100%;
+        }
+      }
     }
 
     .content-right {
       background-position: center;
       background-size: cover;
 
-      .image-container img {
-        height: 400px;
+      .image-overlay {
+        flex-direction: column; // Stack content vertically
+
+        .image-section {
+          padding: 1em;
+          text-align: center;
+
+          img {
+            max-width: 80%;
+          }
+
+          h4.passion-dedication {
+            font-size: 1.2rem;
+          }
+        }
+
+        .image-container {
+          justify-content: center;
+
+          img {
+            height: 400px;
+          }
+        }
       }
     }
   }
@@ -168,18 +208,10 @@
       padding: 1em;
       text-align: center;
 
-      h6.who-we-are {
-        margin-left: 0;
-      }
-
-      h1.main-title {
-        font-size: 1.8rem;
-        margin-left: 0;
-      }
-
+      h6.who-we-are,
+      h1.main-title,
       p.description {
-        margin-left: 0;
-        font-size: 0.9rem;
+        margin-left: 0; // Remove left margin for full width
       }
 
       .icon-box {
@@ -201,27 +233,31 @@
           }
         }
       }
+
+      .image-section {
+        .chess-image {
+          max-width: 80%; // Adjust for mobile
+          margin: 1em 0; // Maintain spacing
+        }
+      }
     }
 
     .content-right {
       padding: 1em;
-      background-position: center;
-      background-size: cover;
 
       .image-overlay {
-        flex-direction: column;
         padding: 1em;
 
         .image-section {
-          padding: 1em;
           text-align: center;
+
+          h4.passion-dedication {
+            font-size: 1rem; // Adjust for mobile
+          }
 
           img {
             max-width: 80%;
-          }
-
-          h4.passion-dedication {
-            font-size: 1.2rem;
+            height: auto; // Maintain aspect ratio
           }
 
           h6.gm-name {
@@ -229,8 +265,12 @@
           }
         }
 
-        .image-container img {
-          height: 300px;
+        .image-container {
+          justify-content: center;
+
+          img {
+            height: 300px; // Adjust height for mobile
+          }
         }
       }
     }
