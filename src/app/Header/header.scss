@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: transparent; // Transparent background
+  background-color: transparent; 
   padding: 0;
   font-family: 'Poppins', sans-serif;
 
@@ -9,15 +9,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 0px; // Adjusted padding for better spacing
+    padding: 0 0px;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      align-items: center;
-    }
   }
 
   &__logo {
@@ -25,18 +20,16 @@
 
     img {
       height: 42px;
+      margin-left: 0px;
 
       @media (max-width: 768px) {
         height: 35px;
+        margin-left: 0;
       }
 
       @media (max-width: 480px) {
         height: 28px;
       }
-    }
-
-    @media (max-width: 768px) {
-      margin-bottom: 15px; // Adds space below the logo for smaller screens
     }
   }
 
@@ -61,7 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 25px; // Refined spacing between menu items
+    gap: 25px; 
 
     @media (max-width: 768px) {
       display: none;
@@ -150,10 +143,6 @@
       background-color: #FFD700;
     }
 
-    @media (max-width: 768px) {
-      margin-top: 10px;
-    }
-
     @media (max-width: 480px) {
       display: none; 
     }
@@ -172,7 +161,7 @@
       background-color: #ffffff;
       min-width: 180px;
       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
+      z-index: 100;
 
       a {
         padding: 12px 16px;
@@ -185,12 +174,6 @@
           background-color: #FFD700;
           color: #0C0C0C;
         }
-      }
-    }
-
-    @media (max-width: 480px) {
-      &-content {
-        position: relative; // Fixes dropdown positioning on small screens
       }
     }
   }
