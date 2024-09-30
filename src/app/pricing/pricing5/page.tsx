@@ -30,21 +30,20 @@ const testimonials = [
 ];
 
 const Pricing5 = () => {
-  // Provide the type for the ref, in this case, HTMLDivElement
   const testimonialsRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const scrollTestimonials = () => {
       if (testimonialsRef.current) {
         testimonialsRef.current.scrollBy({
-          left: 300, // Change this value to adjust the scroll distance
+          left: 300,
           behavior: 'smooth',
         });
       }
     };
 
-    const interval = setInterval(scrollTestimonials, 3000); // Scroll every 3 seconds
-    return () => clearInterval(interval); // Cleanup the interval on unmount
+    const interval = setInterval(scrollTestimonials, 3000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
