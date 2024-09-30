@@ -82,3 +82,35 @@
       }
   }
 }
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .card {
+    width: 45%; /* Adjust the card width for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the content vertically */
+    padding: 2em 0; /* Adjust padding */
+  }
+
+  .cardsContainer {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align cards */
+  }
+
+  .card {
+    width: 90%; /* Full width for mobile */
+    margin: 1em 0; /* Space between cards */
+  }
+
+  .header {
+      font-size: 1.2em; /* Smaller font size for mobile */
+  }
+
+  .description {
+      font-size: 1em; /* Smaller font size for mobile */
+  }
+}
