@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;800&display=swap');
 
 .hero5-container {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; // Example background color
     padding: 5em 0 7em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
 }
 
 .hero5-content {
@@ -16,33 +16,28 @@
 
 .hero5-title {
     font-family: "Poppins", sans-serif;
-    color: goldenrod;
+    color: goldenrod; // Example text color
 }
 
 .hero5-subtitle {
     font-family: "Poppins", sans-serif;
-    color: #555;
+    color: #555; // Example subtitle color
 }
 
 .hero5-boxes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-    @media (max-width: 768px) {
-        flex-direction: column; // Stack boxes vertically on mobile
-    }
+    justify-content: center;
+    width: 100%;
 }
 
-.hero5-box,
-.hero5-cta {
-    width: 33%;
-    text-align: left;
-    padding: 2em;
-
-    @media (max-width: 768px) {
-        width: 100%; // Full width on mobile
-    }
+.hero5-box {
+    width: 100%; // Full width on mobile
+    max-width: 400px; // Max width for larger screens
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .icon-box {
@@ -52,7 +47,8 @@
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background: #fff;
+    background: #fff; // Example background color
+    margin: 1em 0; // Spacing between boxes
 }
 
 .cta-box {
@@ -61,20 +57,24 @@
     justify-content: flex-end;
     padding: 20px;
     border-radius: 5px;
-    color: #FFFFFF;
+    color: #FFFFFF; // Change text color if necessary
     background-size: cover;
     min-height: 275px;
+    margin: 1em 0; // Spacing between CTA boxes
 }
 
 .cta-title {
-    color: #1B1B1B;
+    color: #1B1B1B; // Title color
+    font-size: 31px;
+    font-weight: 600;
 }
 
-.learn-more-button {
+button {
     background-color: #1B1B1B;
     color: #FFFFFF;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-top: 10px; // Space above button
 }
