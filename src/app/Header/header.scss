@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  background-color: transparent;
+  background-color: transparent; // Transparent background
   padding: 0;
   font-family: 'Poppins', sans-serif;
 
@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px; // Adjusted padding for better spacing
+    padding: 0 0px; // Adjusted padding for better spacing
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -40,27 +40,64 @@
     }
   }
 
+  &__hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      display: block;
+      position: fixed;
+      right: 20px;
+      top: 25px;
+      z-index: 999;
+    }
+  }
+
   &__nav {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 25px;
+    gap: 25px; // Refined spacing between menu items
 
     @media (max-width: 768px) {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      left: 0;
+      background-color: #ffffff;
       flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
+      padding: 20px;
+      z-index: 99;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
-    @media (max-width: 480px) {
-      flex-direction: column;
-      gap: 15px;
+      &--open {
+        display: flex;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .header__menu-item a {
+          color: #000;
+        }
+      }
     }
   }
 
   &__menu {
     display: flex;
     gap: 30px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
 
     &-item {
       list-style: none;
@@ -76,17 +113,9 @@
         &:hover {
           color: #FFD700;
         }
-      }
 
-      @media (max-width: 768px) {
-        a {
-          padding: 8px 12px;
-        }
-      }
-
-      @media (max-width: 480px) {
-        a {
-          padding: 8px 10px;
+        @media (max-width: 768px) {
+          color: #000;
         }
       }
     }
@@ -112,7 +141,7 @@
     }
 
     @media (max-width: 480px) {
-      display: none;
+      display: none; 
     }
   }
 
@@ -143,6 +172,7 @@
           color: #0C0C0C;
         }
       }
+      
     }
 
     @media (max-width: 480px) {
