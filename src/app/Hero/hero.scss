@@ -97,77 +97,84 @@
   }
 
   // Tablet View
-  @media (max-width: 1024px) {
-    padding: 0 5%;
-    
-    &-content {
-      .hero-title {
-        font-size: 18px;
-        transform: translateX(0); // Align text normally for smaller screens
-        text-align: center;
-      }
+@media (max-width: 1024px) {
+  padding: 0 5%;
 
-      .hero-subtitle {
-        font-size: 40px;
-        transform: translateX(0);
-        text-align: center;
-      }
-
-      .hero-button {
-        transform: translateX(0);
-        margin: 0 auto;
-        display: block;
-      }
+  &-content {
+    .hero-title {
+      font-size: 18px;
+      transform: translateX(0);
+      text-align: center;
     }
 
-    &-counters {
-      flex-direction: column;
-      width: 100%;
-      
-      .counter-item {
-        flex-basis: 100%; // Take full width
-        margin-bottom: 20px; // Add space between items
-      }
+    .hero-subtitle {
+      font-size: 40px;
+      transform: translateX(0);
+      text-align: center;
+    }
+
+    .hero-button {
+      transform: translateX(0);
+      margin: 0 auto;
+      display: block;
     }
   }
 
-  // Mobile View
-  @media (max-width: 768px) {
-    padding: 0 3%;
+  &-counters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    width: 100%;
 
-    &-content {
-      .hero-title {
-        font-size: 16px;
-        text-align: center;
-      }
+    .counter-item {
+      flex-basis: 100%;
+      margin-bottom: 0;
+    }
+  }
+}
 
-      .hero-subtitle {
-        font-size: 30px;
-        text-align: center;
-      }
+// Mobile View
+@media (max-width: 768px) {
+  padding: 0 3%;
 
-      .hero-button {
-        padding: 10px 20px;
-      }
+  &-content {
+    .hero-title {
+      font-size: 16px;
+      text-align: center;
     }
 
-    &-socials {
-      .social-icons {
-        gap: 15px;
-        font-size: 18px;
-      }
+    .hero-subtitle {
+      font-size: 30px;
+      text-align: center;
     }
 
-    &-counters {
-      .counter-item {
-        .counter-number {
-          font-size: 2em;
-        }
+    .hero-button {
+      padding: 10px 20px;
+    }
+  }
 
-        .counter-title {
-          font-size: 0.9em;
-        }
+  &-socials {
+    .social-icons {
+      gap: 15px;
+      font-size: 18px;
+    }
+  }
+
+  &-counters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    width: 100%;
+
+    .counter-item {
+      .counter-number {
+        font-size:1.5em;
+      }
+
+      .counter-title {
+        font-size: 0.9em;
       }
     }
   }
+}
 }
