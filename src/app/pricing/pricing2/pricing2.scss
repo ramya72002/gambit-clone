@@ -9,12 +9,14 @@
     margin-bottom: 2em;
 
     .package-title {
-      font-size: 1.5em;
+      font-size: 1.8em; // Slightly larger for prominence
+      font-weight: bold; // Bold for emphasis
     }
 
     .package-description {
       font-size: 1.2em;
       color: #444;
+      margin-top: 0.5em; // Add space above for clarity
     }
   }
 
@@ -28,8 +30,11 @@
     .pricing-card {
       width: 33%;
       border: 4px solid #ccc;
+      border-radius: 8px; // Rounded corners for a modern look
       padding: 2em;
       box-sizing: border-box;
+      background-color: #fff; // Ensure the background is white for readability
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
 
       .pricing-card-content {
         text-align: center;
@@ -37,11 +42,13 @@
         .card-title {
           font-size: 1.8em;
           color: #1B1B1B;
+          margin: 0.5em 0; // Add spacing for clarity
         }
 
         .card-description {
           font-size: 1.2em;
           margin-bottom: 1em;
+          color: #666; // Slightly muted color for less emphasis
         }
 
         .divider {
@@ -52,11 +59,14 @@
         .price {
           font-size: 3.5em;
           font-weight: 600;
+          color: #020101; // Ensuring price stands out
+          margin: 0.5em 0; // Spacing for clarity
         }
 
         .price-description {
           font-size: 1.2em;
           color: #888;
+          margin-bottom: 1em; // Spacing for better layout
         }
 
         .features-list {
@@ -65,6 +75,8 @@
 
           li {
             margin-bottom: 0.5em;
+            font-size: 1em; // Adjust for readability
+            color: #333; // Darker color for better contrast
           }
         }
 
@@ -75,9 +87,10 @@
           padding: 0.5em 1.5em;
           cursor: pointer;
           transition: background-color 0.3s ease;
+          border-radius: 5px; // Rounded button for a modern look
 
           &:hover {
-            background-color: #444;
+            background-color: #444; // Darker shade for hover effect
           }
         }
 
@@ -90,12 +103,27 @@
 
       &.most-popular {
         position: relative;
-        background-color: #fff;
+        background-color: #ffcc00; // Highlighted background for popularity
         padding: 0.5em;
-        color: white;
+        color: #1B1B1B; // Dark text for contrast
         font-size: 1.2em;
         margin-bottom: -10px;
         z-index: 1;
+        border-radius: 5px; // Rounded corners for consistency
+      }
+    }
+  }
+
+  // Mobile Styles
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column; // Stack cards vertically
+      gap: 1.5em; // Adjusted spacing for mobile
+
+      .pricing-card {
+        width: 100%; // Full width for mobile
+        padding: 1.5em; // Adjust padding for mobile
+        max-width: none; // Remove max-width for mobile view
       }
     }
   }
